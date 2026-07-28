@@ -11,6 +11,7 @@ body{
 
 .container{
   max-width: 945px;
+  min-height: 700px;
   margin: auto;
 }
 
@@ -177,6 +178,10 @@ body{
 }
 .form-button{
   width: 100%;
+}
+
+.contacts{
+  background: rgba(0, 0, 0, 0);
 }
 
 .contacts-block{
