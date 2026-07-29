@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Семенцов Мирон</title>
@@ -10,7 +11,7 @@
 <body>
   <header class="hero">
     <div class="container">
-      <div class="hero-header">
+      <div class="hero-header wow animate__fadeIn" style="animation-duration: 1s !important;" data-wow-delay="2s">
         <img src="images/logo.svg" alt="GloAcademy" class="logo">
         <div class="social-links">
           <a href="https://github.com/vaxpleer" class="social-link">
@@ -48,32 +49,32 @@
       <div class="container">
         <h2 class="section-title wow animate__fadeInUp" style="animation-duration: 1s !important;" data-wow-delay="0.3s">Со мной удобно работать</h2>
         <div class="features-block">
-          <div class="features-item wow animate__fadeInDown" style="animation-duration: 1s !important;" data-wow-delay="1.2s">
+          <div class="features-item wow animate__fadeInTopLeft" style="animation-duration: 1s !important;" data-wow-delay="0.5s">
             <img src="images/features/offer-img.svg" alt="По договору" class="features-image">
             <h3 class="features-title">По договору</h3>
             <p class="features-text">Предоставлю все документы для бухгалтерии: договоры, счета и акты. Работаю как ИП без НДС.</p>
           </div>
-          <div class="features-item wow animate__fadeInDown" style="animation-duration: 1s !important;" data-wow-delay="1.3s">
+          <div class="features-item wow animate__fadeInDown" style="animation-duration: 1s !important;" data-wow-delay="0.5s">
             <img src="images/features/deadline-img.svg" alt="Точно в срок" class="features-image">
             <h3 class="features-title">Точно в срок</h3>
             <p class="features-text">В договоре прописана моя ответственность за срок проекта. Если просрочу — плачу неустойку.</p>
           </div>
-          <div class="features-item wow animate__fadeInDown" style="animation-duration: 1s !important;" data-wow-delay="1.4s">
+          <div class="features-item wow animate__fadeInTopRight" style="animation-duration: 1s !important;" data-wow-delay="0.5s">
             <img src="images/features/agreement-img.svg" alt="Ценник под вас" class="features-image">
             <h3 class="features-title">Ценник под вас</h3>
             <p class="features-text">Если у вас нетиповой проект, сделаю рассчет цены за работу и объясню, как складывается цена.</p>
           </div>
-          <div class="features-item wow animate__fadeInDown" style="animation-duration: 1s !important;" data-wow-delay="1.5s">
+          <div class="features-item wow animate__fadeInBottomLeft" style="animation-duration: 1s !important;" data-wow-delay="0.5s">
             <img src="images/features/steps-img.svg" alt="Промежуточные итоги" class="features-image">
             <h3 class="features-title">Промежуточные итоги</h3>
             <p class="features-text">Показываю работу поэтапно, а не в последий момент перед крайним сроком.</p>
           </div>
-          <div class="features-item wow animate__fadeInDown" style="animation-duration: 1s !important;" data-wow-delay="1.6s">
+          <div class="features-item wow animate__fadeInUp" style="animation-duration: 1s !important;" data-wow-delay="0.5s">
             <img src="images/features/storage-img.svg" alt="Хостинг и домен " class="features-image">
             <h3 class="features-title">Хостинг и домен</h3>
             <p class="features-text">Если мы договорились о цене проекта, в неё входит всё: домен и хостинг на год + SSL сертификат.</p>
           </div>
-          <div class="features-item wow animate__fadeInDown" style="animation-duration: 1s !important;" data-wow-delay="1.7s">
+          <div class="features-item wow animate__fadeInBottomRight" style="animation-duration: 1s !important;" data-wow-delay="0.5s">
             <img src="images/features/conversation-img.svg" alt="Не брошу после сдачи" class="features-image">
             <h3 class="features-title">Не брошу после сдачи</h3>
             <p class="features-text">Научу вас или вашего сотрудника пользоваться сайтом, запишу видео-инструкции.</p>
@@ -84,6 +85,122 @@
       <!-- /.container -->
     </section>
     <!-- /.features -->
+     <section class="section projects">
+      <div class="container">
+        <h2 class="section-title">Последние проекты</h2>
+
+        <div class="swiper projects-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide projects-slide">
+              <img src="images/project-img.png" alt="Сайт строительной фирмы “Велстрой”" class="project-image">
+
+              <div class="project-text">
+                <h3 class="project-title">Сайт строительной фирмы “Велстрой”</h3>
+                <div class="project-time">
+                  <img src="images/time-icon.svg" alt="Срок" class="project-icon">
+                  <div class="project-description">
+                    <h4 class="project-subtitle">Сроки</h4>
+                    <p class="project-paragraph">4 рабочих дня</p>
+                  </div>
+                </div>
+                <!-- /.project-time -->
+                <div class="project-cost">
+                  <img src="images/cost-icon.svg" alt="Стоимость" class="project-icon">
+                  <div class="project-description">
+                    <h4 class="project-subtitle">Стоимость</h4>
+                    <p class="project-paragraph">14 000 рублей</p>
+                  </div>
+                </div>
+                <!-- /.project-cost -->
+                <div class="project-feedback">
+                  <img src="images/feedback-icon.svg" alt="Отзыв клиента" class="project-icon">
+                  <div class="project-description">
+                    <h4 class="project-subtitle">Отзыв клиента</h4>
+                    <p class="project-paragraph">Мне понравилось работать с Артемом, потому что он все время был на связи и предлагал свои решения, когда мы заходили в
+                    тупик с дизайном. Мне нужны были закрывающие документы для бухгалтерии, и Артем — тот редкий фрилансер, у которого с
+                    документами все в порядке</p>
+                  </div>
+                </div>
+                <!-- /.project-feedback -->
+              </div>
+              <!-- /.project-text --></div>
+            <div class="swiper-slide projects-slide">
+              <img src="images/cot.jpg" alt="Сайт фирмы" class="project-image" width="338" height="268">
+
+              <div class="project-text">
+                <h3 class="project-title">Сайт строительной фирмы “Велстрой”</h3>
+                <div class="project-time">
+                  <img src="images/time-icon.svg" alt="Срок" class="project-icon">
+                  <div class="project-description">
+                    <h4 class="project-subtitle">Сроки</h4>
+                    <p class="project-paragraph">4 рабочих дня</p>
+                  </div>
+                </div>
+                <!-- /.project-time -->
+                <div class="project-cost">
+                  <img src="images/cost-icon.svg" alt="Стоимость" class="project-icon">
+                  <div class="project-description">
+                    <h4 class="project-subtitle">Стоимость</h4>
+                    <p class="project-paragraph">14 000 рублей</p>
+                  </div>
+                </div>
+                <!-- /.project-cost -->
+                <div class="project-feedback">
+                  <img src="images/feedback-icon.svg" alt="Отзыв клиента" class="project-icon">
+                  <div class="project-description">
+                    <h4 class="project-subtitle">Отзыв клиента</h4>
+                    <p class="project-paragraph">Мне понравилось работать с Артемом, потому что он все время был на связи и предлагал свои решения, когда мы заходили в
+                    тупик с дизайном. Мне нужны были закрывающие документы для бухгалтерии, и Артем — тот редкий фрилансер, у которого с
+                    документами все в порядке</p>
+                  </div>
+                </div>
+                <!-- /.project-feedback -->
+              </div>
+              <!-- /.project-text --></div>
+            <div class="swiper-slide projects-slide">
+              <img src="images/avatar.png" alt="Сайт фирмы “Велстрой”" class="project-image" width="338" height="268">
+
+              <div class="project-text">
+                <h3 class="project-title">Сайт строительной фирмы “Велстрой”</h3>
+                <div class="project-time">
+                  <img src="images/time-icon.svg" alt="Срок" class="project-icon">
+                  <div class="project-description">
+                    <h4 class="project-subtitle">Сроки</h4>
+                    <p class="project-paragraph">4 рабочих дня</p>
+                  </div>
+                </div>
+                <!-- /.project-time -->
+                <div class="project-cost">
+                  <img src="images/cost-icon.svg" alt="Стоимость" class="project-icon">
+                  <div class="project-description">
+                    <h4 class="project-subtitle">Стоимость</h4>
+                    <p class="project-paragraph">14 000 рублей</p>
+                  </div>
+                </div>
+                <!-- /.project-cost -->
+                <div class="project-feedback">
+                  <img src="images/feedback-icon.svg" alt="Отзыв клиента" class="project-icon">
+                  <div class="project-description">
+                    <h4 class="project-subtitle">Отзыв клиента</h4>
+                    <p class="project-paragraph">Мне понравилось работать с Артемом, потому что он все время был на связи и предлагал свои решения, когда мы заходили в
+                    тупик с дизайном. Мне нужны были закрывающие документы для бухгалтерии, и Артем — тот редкий фрилансер, у которого с
+                    документами все в порядке</p>
+                  </div>
+                </div>
+                <!-- /.project-feedback -->
+              </div>
+              <!-- /.project-text --></div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="projects-pagination"></div>
+        
+        
+        </div>
+      </div>
+     </section>
   </main>
 
   <footer class="contacts section">
@@ -136,6 +253,7 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -133,6 +133,63 @@ body{
   margin: 0;
 }
 
+/* projects */
+.projects{
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 95.44%);
+}
+.projects-slide{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.project-text{
+  flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-title{
+  flex-basis: 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 41px;
+  margin-left: 3px;
+}
+.project-time, .project-cost{
+  flex-basis: 50%;
+  margin-bottom: 44px;
+}
+.project-time, .project-cost, .project-feedback {
+  display: flex;
+  align-items: flex-start;
+}
+.project-icon{
+  margin: 0;
+  margin-top: 15px;
+  margin-right: 16px;
+}
+.project-subtitle{
+  margin: 0;
+  margin-bottom: 7px;
+}
+.project-paragraph{
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.project-bullet{
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ffbb01;
+  border-radius: 50%;
+  display: inline-block;
+}
+.project-bullet-active{
+  background:#ffbb01;
+}
+
 /* contacts */
 .contacts-form{
   background: #fff;
