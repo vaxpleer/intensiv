@@ -292,8 +292,10 @@ body{
 }
 
 /* media */
-
-@media (max-width:320px){
+@media (max-width: 500px) {
+  .animate__animated {
+    animation: none !important;
+  }
   .container{
     max-width: 255px;
     min-height: 600px;
@@ -305,8 +307,8 @@ body{
     margin-bottom: 39px;
   }
   .hero-content{
-    display: normal;
-    padding-top: 130px;
+    flex-direction: column;
+    align-items: center;
   }
   .hero-avatar{
     width: 113px;
@@ -314,9 +316,8 @@ body{
     border: 5px solid #fff;
     background-size: 100%;
     background-position: center top -1px;
-    position: absolute;
-    top: 109px;
-    left: 104px;
+    order:-1;
+    margin-bottom: 17px;
   }
   .hero-text{
     text-align: center;
