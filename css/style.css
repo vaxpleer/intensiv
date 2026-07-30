@@ -290,3 +290,145 @@ body{
   color: #a5a5a5;
   margin-top: 72px;
 }
+
+/* media */
+
+@media (max-width:320px){
+  .container{
+    max-width: 255px;
+    min-height: 600px;
+  }
+  .hero{
+    padding-bottom: 25px;
+  }
+  .hero-header{
+    margin-bottom: 39px;
+  }
+  .hero-content{
+    display: normal;
+    padding-top: 130px;
+  }
+  .hero-avatar{
+    width: 113px;
+    height: 113px;
+    border: 5px solid #fff;
+    background-size: 100%;
+    background-position: center top -1px;
+    position: absolute;
+    top: 109px;
+    left: 104px;
+  }
+  .hero-text{
+    text-align: center;
+  }
+  .hero-subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 169%;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .hero-title{
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .hero-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 34px;
+  }
+  .button{
+    border-radius: 5px 5px 10px 10px;
+    width: 231px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 14px 25px;
+  }
+
+  /* features */
+  .section-title{
+    font-weight: 700;
+    font-size: 19px;
+    margin-bottom: 60px;
+  }
+  .features-block{
+    margin: 0;
+    padding: 0;
+  }
+  .features-item{
+    flex-basis: 100%;
+  }
+  .features-image{
+    margin: 0;
+    margin-left: 1px;
+    margin-bottom: 22px;
+  }
+  .features-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    margin: 0;
+    margin-bottom: 6px;
+  }
+  .features-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+  }
+
+  /* projects */
+  .projects-slider{
+    width: 256px;
+    height: 778px;
+  }
+  .projects-slide{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .project-image{
+    border-radius: 6px;
+    width: 250px;
+    height: 198px;
+    margin: 0;
+    margin-left: 1px;
+    margin-bottom: 46px;
+  }
+  .project-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0px 0px 40px 2px;
+  }
+  .project-title, .project-time, .project-cost, .project-description, .project-text{
+    flex-basis: 100%;
+  }
+  .project-icon{
+    margin: 0;
+    margin-top: 4px;
+    margin-right: 8px;
+  }
+  .project-subtitle{
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .project-paragraph{
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .project-time,
+  .project-cost{
+    margin-bottom: 33px;
+  }
+  .projects-pagination{
+    margin-top: 27px;
+  }
+}
