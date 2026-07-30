@@ -358,6 +358,7 @@ body{
     font-weight: 700;
     font-size: 19px;
     margin-bottom: 60px;
+    text-align: center;
   }
   .features-block{
     margin: 0;
@@ -386,13 +387,13 @@ body{
 
   /* projects */
   .projects-slider{
-    width: 256px;
+    width: 254px;
     height: 778px;
+    overflow: visible !important;
   }
   .projects-slide{
     display: flex;
     flex-wrap: wrap;
-
   }
   .project-image{
     border-radius: 6px;
@@ -430,5 +431,50 @@ body{
   }
   .projects-pagination{
     margin-top: 27px;
+  }
+  
+  /* contacts */
+  .contacts-block{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacts-form, .contacts-phone, .contacts-mail, .contacts-links, .contacts-policy, .contacts-text{
+    flex-basis: 100%;
+  }
+  .contacts-form{
+    width: 256px;
+    height: 393px;
+    padding: 0;
+    padding: 39px 19px 47px 14px;
+    margin-bottom: 64px;
+  }
+  .form-title{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+  }
+  .form-button{
+    width: 223px;
+  }
+  .contacts-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  a.contacts-link{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 13px;
+  }
+  .contacts-phone, .contacts-mail{
+    margin-bottom: 35px;
+  }
+  .contacts-social{
+    width:90px;
+    height: 150px;
+    padding: 0;
   }
 }
