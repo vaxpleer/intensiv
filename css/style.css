@@ -293,9 +293,6 @@ body{
 
 /* media */
 @media (max-width: 500px) {
-  .animate__animated {
-    animation: none !important;
-  }
   .container{
     max-width: 255px;
     min-height: 600px;

@@ -255,5 +255,70 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    (function () {
+      // Если ширина > 500 — не делаем ничего
+      if (window.innerWidth > 500) return;
+
+      // Функция для отключения анимации у элемента
+      function killAnimation(el) {
+        el.style.animation = 'none !important';
+        el.style.animationName = 'none !important';
+        el.style.transition = 'none !important';
+        el.style.opacity = '1 !important';
+        el.style.visibility = 'visible !important';
+      }
+
+      // Обрабатываем все существующие элементы
+      function processAll() {
+        document.querySelectorAll('.wow, .animate__animated, [class*="animate__"], .animated').forEach(killAnimation);
+      }
+
+      // Запускаем сразу
+      processAll();
+
+      // Наблюдаем за изменениями в DOM
+      const observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+          // Если изменился класс у существующего элемента
+          if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+            const target = mutation.target;
+            if (target.classList &&
+              (target.classList.contains('wow') ||
+                target.classList.contains('animate__animated') ||
+                target.className.includes('animate__'))) {
+              killAnimation(target);
+            }
+          }
+
+          // Если добавились новые узлы
+          if (mutation.type === 'childList') {
+            mutation.addedNodes.forEach(function (node) {
+              if (node.nodeType === 1) { // элемент
+                // Проверяем сам узел
+                if (node.matches && node.matches('.wow, .animate__animated, [class*="animate__"], .animated')) {
+                  killAnimation(node);
+                }
+                // Проверяем потомков
+                if (node.querySelectorAll) {
+                  node.querySelectorAll('.wow, .animate__animated, [class*="animate__"], .animated').forEach(killAnimation);
+                }
+              }
+            });
+          }
+        });
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        attributeFilter: ['class']
+      });
+
+      // Дополнительно прогоняем каждые 500 мс для подстраховки
+      setInterval(processAll, 500);
+    })();
+  </script>
 </body>
 </html>
