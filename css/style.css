@@ -462,19 +462,29 @@ body{
     font-size: 18px;
     margin-bottom: 12px;
   }
-  a.contacts-link{
+  .contacts-link{
     font-weight: 400;
     font-size: 14px;
     margin: 0;
     padding: 0;
     margin-bottom: 13px;
   }
+  .aoaoa{
+    margin: 0;
+  }
   .contacts-phone, .contacts-mail{
     margin-bottom: 35px;
   }
   .contacts-social{
+    display: flex;
+    flex-direction: column;
     width:90px;
-    height: 150px;
     padding: 0;
+  }
+  .contacts-data{
+    margin-bottom: 39px;
+  }
+  .contacts-policy{
+    margin-top: 27px;
   }
 }
