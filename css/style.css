@@ -290,6 +290,9 @@ body{
   color: #a5a5a5;
   margin-top: 72px;
 }
+.mobile-version{
+  margin-top: 0;
+}
 
 /* media */
 @media (max-width: 500px) {
